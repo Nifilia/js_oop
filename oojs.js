@@ -5,17 +5,11 @@ function shape(name, sides, sideLength){
 	obj.sideLength = sideLength;
 	return obj;
 }
-const square = new shape("square");
-square.name;
-square.sides;
-square.sideLength;
-console.log(shape("square", 4, 5))
+const square = new shape("square", 4, 5);
+console.log(square);
 
-const triangle = shape("triangle");
-triangle.name;
-triangle.sides;
-triangle.sideLength;
-console.log(shape("square", 3, 3))
+const triangle = new shape("triangle", 3, 3);
+console.log(triangle);
 /*
 Shape.prototype.calcPerimeter = function(){
 	console.log(this.sides * this.sideLength)
